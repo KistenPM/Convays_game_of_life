@@ -1,9 +1,15 @@
-public class Cell {
-    private final boolean[][] cellGrid;
+public class Cell {                           //object
+    private boolean state;                    //attribute
 
-    public Cell(int row, int col) {
-        this.cellGrid = new boolean[row][col];
+    public void setState(boolean state) {     //setter
+        this.state = state;
     }
-//    Grid.getGrid()[sc.nextInt()][sc.nextInt()] = sc.nextInt();
-//    System.out.println(Arrays.deepToString(Grid.getGrid()));
+
+    public boolean getState() {               //getter
+        return state;
+    }
+
+
+    //    Grid.getGrid()[sc.nextInt()][sc.nextInt()] = sc.nextInt();
+    //    System.out.println(Arrays.deepToString(Grid.getGrid()));
 }
